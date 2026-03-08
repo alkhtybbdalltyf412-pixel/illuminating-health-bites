@@ -3,6 +3,7 @@ import { useI18n } from "@/lib/i18n";
 import Header from "@/components/Header";
 import FoodCard, { FoodItem } from "@/components/FoodCard";
 import CartDrawer from "@/components/CartDrawer";
+import Testimonials from "@/components/Testimonials";
 
 import grilledChicken from "@/assets/grilled-chicken.jpg";
 import riceChicken from "@/assets/rice-chicken.jpg";
@@ -97,7 +98,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Floating cart button on mobile */}
+      {/* Testimonials */}
+      <Testimonials />
+
       {cartCount > 0 && (
         <button
           onClick={() => setCartOpen(true)}
