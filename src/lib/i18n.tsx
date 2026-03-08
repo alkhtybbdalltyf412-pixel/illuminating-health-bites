@@ -47,6 +47,12 @@ const translations = {
     en: "Premium dates stuffed with the finest nuts",
     ru: "Отборные финики с лучшими орехами",
   },
+  nutBars: { ar: "بارات المكسّرات", en: "Nut Bars", ru: "Ореховые батончики" },
+  nutBarsDesc: {
+    ar: "بارات مكسّرات صحّية مغلّفة بجوز الهند المبشور",
+    en: "Healthy nut bars coated with shredded coconut",
+    ru: "Полезные ореховые батончики с кокосовой стружкой",
+  },
   addToOrder: { ar: "أضف للطلب", en: "Add to Order", ru: "Добавить в заказ" },
   removeFromOrder: { ar: "إزالة", en: "Remove", ru: "Удалить" },
   myOrder: { ar: "طلبي", en: "My Order", ru: "Мой заказ" },

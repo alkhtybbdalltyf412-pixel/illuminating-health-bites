@@ -11,6 +11,7 @@ import fajita from "@/assets/fajita.jpg";
 import dateBalls from "@/assets/date-balls.jpg";
 import coconutBalls from "@/assets/coconut-balls.jpg";
 import stuffedDates from "@/assets/stuffed-dates.jpg";
+import nutBars from "@/assets/nut-bars.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
@@ -23,6 +24,7 @@ const snacks: FoodItem[] = [
   { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 0 },
   { id: "coconut-balls", nameKey: "coconutBalls", descKey: "coconutBallsDesc", image: coconutBalls, price: 0 },
   { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 0 },
+  { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 0 },
 ];
 
 const allItems = [...meals, ...snacks];
