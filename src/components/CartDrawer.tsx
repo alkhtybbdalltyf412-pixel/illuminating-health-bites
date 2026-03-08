@@ -62,9 +62,6 @@ const CartDrawer = ({ open, onClose, cart, items, onAdd, onRemove }: CartDrawerP
                   />
                   <div className="flex-1">
                     <h4 className="font-semibold text-foreground text-sm">{t(item.nameKey as any)}</h4>
-                    <p className="text-primary font-bold text-sm">
-                      {(item.price * cart[item.id]).toLocaleString()} {t("currency")}
-                    </p>
                   </div>
                   <div className="flex items-center gap-1">
                     <button
@@ -88,12 +85,6 @@ const CartDrawer = ({ open, onClose, cart, items, onAdd, onRemove }: CartDrawerP
 
           {cartItems.length > 0 && (
             <div className="p-4 border-t border-border space-y-3">
-              <div className="flex justify-between text-lg font-bold">
-                <span>{t("total")}</span>
-                <span className="text-primary">
-                  {total.toLocaleString()} {t("currency")}
-                </span>
-              </div>
               <button
                 onClick={handleOrder}
                 className="w-full flex items-center justify-center gap-2 py-3 bg-primary text-primary-foreground rounded-xl font-bold text-lg hover:opacity-90 transition-opacity"

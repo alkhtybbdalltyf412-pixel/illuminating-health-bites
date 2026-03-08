@@ -13,15 +13,15 @@ import healthyChocolate from "@/assets/healthy-chocolate.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
-  { id: "grilled-chicken", nameKey: "grilledChicken", descKey: "grilledChickenDesc", image: grilledChicken, price: 8000 },
-  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 7500 },
-  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 9000 },
+  { id: "grilled-chicken", nameKey: "grilledChicken", descKey: "grilledChickenDesc", image: grilledChicken, price: 0 },
+  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 0 },
+  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 0 },
 ];
 
 const snacks: FoodItem[] = [
-  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 5000 },
-  { id: "mixed-nuts", nameKey: "mixedNuts", descKey: "mixedNutsDesc", image: nuts, price: 6000 },
-  { id: "healthy-chocolate", nameKey: "healthyChocolate", descKey: "healthyChocolateDesc", image: healthyChocolate, price: 4500 },
+  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 0 },
+  { id: "mixed-nuts", nameKey: "mixedNuts", descKey: "mixedNutsDesc", image: nuts, price: 0 },
+  { id: "healthy-chocolate", nameKey: "healthyChocolate", descKey: "healthyChocolateDesc", image: healthyChocolate, price: 0 },
 ];
 
 const allItems = [...meals, ...snacks];

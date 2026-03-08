@@ -32,10 +32,7 @@ const FoodCard = ({ item, quantity, onAdd, onRemove }: FoodCardProps) => {
       <div className="p-4">
         <h3 className="text-lg font-bold text-foreground mb-1">{t(item.nameKey as any)}</h3>
         <p className="text-sm text-muted-foreground mb-3">{t(item.descKey as any)}</p>
-        <div className="flex items-center justify-between">
-          <span className="text-lg font-bold text-primary">
-            {item.price.toLocaleString()} {t("currency")}
-          </span>
+        <div className="flex items-center justify-end">
           {quantity === 0 ? (
             <button
               onClick={onAdd}
