@@ -7,22 +7,22 @@ import Testimonials from "@/components/Testimonials";
 
 import riceChicken from "@/assets/rice-chicken.jpg";
 import grilledWings from "@/assets/grilled-wings.jpg";
+import fajita from "@/assets/fajita.jpg";
 import dateBalls from "@/assets/date-balls.jpg";
 import coconutBalls from "@/assets/coconut-balls.jpg";
-import rasAlAbd from "@/assets/ras-al-abd.jpg";
-import nutDisc from "@/assets/nut-disc.jpg";
+import stuffedDates from "@/assets/stuffed-dates.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
   { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 0 },
   { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 0 },
+  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 0 },
 ];
 
 const snacks: FoodItem[] = [
   { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 0 },
   { id: "coconut-balls", nameKey: "coconutBalls", descKey: "coconutBallsDesc", image: coconutBalls, price: 0 },
-  { id: "ras-al-abd", nameKey: "rasAlAbd", descKey: "rasAlAbdDesc", image: rasAlAbd, price: 0 },
-  { id: "nut-disc", nameKey: "nutDisc", descKey: "nutDiscDesc", image: nutDisc, price: 0 },
+  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 0 },
 ];
 
 const allItems = [...meals, ...snacks];
