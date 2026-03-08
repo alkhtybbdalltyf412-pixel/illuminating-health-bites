@@ -62,9 +62,6 @@ const CartDrawer = ({ open, onClose, cart, items, onAdd, onRemove }: CartDrawerP
                   />
                   <div className="flex-1">
                     <h4 className="font-semibold text-foreground text-sm">{t(item.nameKey as any)}</h4>
-                    <p className="text-primary font-bold text-sm">
-                      {(item.price * cart[item.id]).toLocaleString()} {t("currency")}
-                    </p>
                   </div>
                   <div className="flex items-center gap-1">
                     <button
