@@ -13,9 +13,9 @@ import healthyChocolate from "@/assets/healthy-chocolate.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
-  { id: "grilled-chicken", nameKey: "grilledChicken", descKey: "grilledChickenDesc", image: grilledChicken, price: 8000 },
-  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 7500 },
-  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 9000 },
+  { id: "grilled-chicken", nameKey: "grilledChicken", descKey: "grilledChickenDesc", image: grilledChicken, price: 0 },
+  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 0 },
+  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 0 },
 ];
 
 const snacks: FoodItem[] = [
