@@ -98,7 +98,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Floating cart button on mobile */}
+      {/* Testimonials */}
+      <Testimonials />
+
       {cartCount > 0 && (
         <button
           onClick={() => setCartOpen(true)}
