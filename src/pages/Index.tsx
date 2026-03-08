@@ -19,9 +19,9 @@ const meals: FoodItem[] = [
 ];
 
 const snacks: FoodItem[] = [
-  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 5000 },
-  { id: "mixed-nuts", nameKey: "mixedNuts", descKey: "mixedNutsDesc", image: nuts, price: 6000 },
-  { id: "healthy-chocolate", nameKey: "healthyChocolate", descKey: "healthyChocolateDesc", image: healthyChocolate, price: 4500 },
+  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 0 },
+  { id: "mixed-nuts", nameKey: "mixedNuts", descKey: "mixedNutsDesc", image: nuts, price: 0 },
+  { id: "healthy-chocolate", nameKey: "healthyChocolate", descKey: "healthyChocolateDesc", image: healthyChocolate, price: 0 },
 ];
 
 const allItems = [...meals, ...snacks];
