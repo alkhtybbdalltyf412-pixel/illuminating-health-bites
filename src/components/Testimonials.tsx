@@ -24,8 +24,8 @@ const testimonials = [
     name: { ar: "علي محمد", en: "Ali Mohammed", ru: "Али Мохаммед" },
     text: {
       ar: "التمر المحشي خرافي! والشوكولاتة الصحّية إدمان. شكراً السمّ المنير على هالجودة.",
-      en: "The stuffed dates are incredible! And the healthy chocolate is addictive. Thank you Al-Sam Al-Munir for this quality.",
-      ru: "Финики с начинкой — невероятные! А полезный шоколад вызывает зависимость. Спасибо Ас-Самм Аль-Мунир за такое качество.",
+      en: "The stuffed dates are incredible! And the healthy chocolate is addictive. Thank you for this quality.",
+      ru: "Финики с начинкой — невероятные! А полезный шоколад вызывает зависимость. Спасибо за такое качество.",
     },
     rating: 5,
   },
