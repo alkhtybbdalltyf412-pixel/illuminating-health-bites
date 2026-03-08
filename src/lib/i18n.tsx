@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useCallback } from "react";
 export type Lang = "ar" | "en" | "ru";
 
 const translations = {
-  storeName: { ar: "السمّ المنير", en: "Al-Sam Al-Munir", ru: "Ас-Самм Аль-Мунир" },
+  storeName: { ar: "السمّ المنير", en: "The Illuminating Poison", ru: "Сияющий Яд" },
   heroSubtitle: {
     ar: "طعام صحّي بنكهة لا تُنسى",
     en: "Healthy food with an unforgettable flavor",
