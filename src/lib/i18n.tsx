@@ -53,6 +53,12 @@ const translations = {
     en: "Healthy nut bars coated with shredded coconut",
     ru: "Полезные ореховые батончики с кокосовой стружкой",
   },
+  chocoBar: { ar: "ألواح شوكولاتة صحّية", en: "Healthy Chocolate Bars", ru: "Полезные шоколадные батончики" },
+  chocoBarDesc: {
+    ar: "ألواح شوكولاتة داكنة صحّية بدون سكّر مُضاف",
+    en: "Healthy dark chocolate bars with no added sugar",
+    ru: "Полезные батончики из тёмного шоколада без сахара",
+  },
   addToOrder: { ar: "أضف للطلب", en: "Add to Order", ru: "Добавить в заказ" },
   removeFromOrder: { ar: "إزالة", en: "Remove", ru: "Удалить" },
   myOrder: { ar: "طلبي", en: "My Order", ru: "Мой заказ" },

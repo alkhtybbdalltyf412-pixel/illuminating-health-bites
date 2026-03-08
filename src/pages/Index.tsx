@@ -12,6 +12,7 @@ import dateBalls from "@/assets/date-balls.jpg";
 import coconutBalls from "@/assets/coconut-balls.jpg";
 import stuffedDates from "@/assets/stuffed-dates.jpg";
 import nutBars from "@/assets/nut-bars.jpg";
+import chocoBar from "@/assets/healthy-chocolate-bars.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
@@ -25,6 +26,7 @@ const snacks: FoodItem[] = [
   { id: "coconut-balls", nameKey: "coconutBalls", descKey: "coconutBallsDesc", image: coconutBalls, price: 0 },
   { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 0 },
   { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 0 },
+  { id: "choco-bar", nameKey: "chocoBar", descKey: "chocoBarDesc", image: chocoBar, price: 0 },
 ];
 
 const allItems = [...meals, ...snacks];
