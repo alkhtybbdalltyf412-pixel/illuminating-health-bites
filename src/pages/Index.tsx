@@ -5,24 +5,24 @@ import FoodCard, { FoodItem } from "@/components/FoodCard";
 import CartDrawer from "@/components/CartDrawer";
 import Testimonials from "@/components/Testimonials";
 
-import grilledChicken from "@/assets/grilled-chicken.jpg";
 import riceChicken from "@/assets/rice-chicken.jpg";
-import fajita from "@/assets/fajita.jpg";
-import stuffedDates from "@/assets/stuffed-dates.jpg";
-import nuts from "@/assets/nuts.jpg";
-import healthyChocolate from "@/assets/healthy-chocolate.jpg";
+import grilledWings from "@/assets/grilled-wings.jpg";
+import dateBalls from "@/assets/date-balls.jpg";
+import coconutBalls from "@/assets/coconut-balls.jpg";
+import rasAlAbd from "@/assets/ras-al-abd.jpg";
+import nutDisc from "@/assets/nut-disc.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
-  { id: "grilled-chicken", nameKey: "grilledChicken", descKey: "grilledChickenDesc", image: grilledChicken, price: 0 },
   { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 0 },
-  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 0 },
+  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 0 },
 ];
 
 const snacks: FoodItem[] = [
-  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 0 },
-  { id: "mixed-nuts", nameKey: "mixedNuts", descKey: "mixedNutsDesc", image: nuts, price: 0 },
-  { id: "healthy-chocolate", nameKey: "healthyChocolate", descKey: "healthyChocolateDesc", image: healthyChocolate, price: 0 },
+  { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 0 },
+  { id: "coconut-balls", nameKey: "coconutBalls", descKey: "coconutBallsDesc", image: coconutBalls, price: 0 },
+  { id: "ras-al-abd", nameKey: "rasAlAbd", descKey: "rasAlAbdDesc", image: rasAlAbd, price: 0 },
+  { id: "nut-disc", nameKey: "nutDisc", descKey: "nutDiscDesc", image: nutDisc, price: 0 },
 ];
 
 const allItems = [...meals, ...snacks];
