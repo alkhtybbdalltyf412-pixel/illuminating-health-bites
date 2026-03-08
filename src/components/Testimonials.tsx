@@ -5,36 +5,36 @@ const testimonials = [
   {
     name: { ar: "أحمد الكريم", en: "Ahmed Al-Kareem", ru: "Ахмед Аль-Карим" },
     text: {
-      ar: "أفضل أكل صحي جربته! النظافة ممتازة والطعم لا يُوصف. دائماً أطلب منهم.",
-      en: "Best healthy food I've ever tried! Excellent hygiene and indescribable taste.",
-      ru: "Лучшая здоровая еда, которую я пробовал! Отличная гигиена и невероятный вкус.",
+      ar: "أفضل أكل صحّي جرّبته! النظافة ممتازة والطعم لا يُوصف. دائماً أطلب منهم.",
+      en: "The best healthy food I've ever tried! Excellent hygiene and an incredible taste. I always order from them.",
+      ru: "Лучшая здоровая еда, которую я пробовал! Безупречная чистота и потрясающий вкус. Всегда заказываю у них.",
     },
     rating: 5,
   },
   {
     name: { ar: "فاطمة حسين", en: "Fatima Hussein", ru: "Фатима Хусейн" },
     text: {
-      ar: "الوجبات طازجة دائماً والمكونات عالية الجودة. أنصح الجميع بتجربتهم!",
-      en: "Meals are always fresh with high quality ingredients. Highly recommend!",
-      ru: "Блюда всегда свежие, ингредиенты высочайшего качества. Рекомендую всем!",
+      ar: "الوجبات طازجة دائماً والمكوّنات عالية الجودة. أنصح الجميع بتجربتهم!",
+      en: "The meals are always fresh and the ingredients are top quality. I highly recommend them to everyone!",
+      ru: "Блюда всегда свежие, а ингредиенты высочайшего качества. Рекомендую всем!",
     },
     rating: 5,
   },
   {
     name: { ar: "علي محمد", en: "Ali Mohammed", ru: "Али Мохаммед" },
     text: {
-      ar: "التمر المحشي خرافي! والشوكولا الصحية إدمان. شكراً السم المنير على هالجودة.",
-      en: "The stuffed dates are amazing! And the healthy chocolate is addictive.",
-      ru: "Финики с начинкой — просто фантастика! А полезный шоколад — это зависимость.",
+      ar: "التمر المحشي خرافي! والشوكولاتة الصحّية إدمان. شكراً السمّ المنير على هالجودة.",
+      en: "The stuffed dates are incredible! And the healthy chocolate is addictive. Thank you Al-Sam Al-Munir for this quality.",
+      ru: "Финики с начинкой — невероятные! А полезный шоколад вызывает зависимость. Спасибо Ас-Самм Аль-Мунир за такое качество.",
     },
     rating: 5,
   },
   {
     name: { ar: "مريم عبدالله", en: "Mariam Abdullah", ru: "Мариам Абдулла" },
     text: {
-      ar: "نظافة المطبخ والتغليف تدل على احترافية عالية. أكل صحي ولذيذ بنفس الوقت.",
-      en: "Kitchen cleanliness and packaging show high professionalism. Healthy and delicious!",
-      ru: "Чистота кухни и упаковки говорят о высоком профессионализме. Здорово и вкусно!",
+      ar: "نظافة المطبخ والتغليف تدلّ على احترافية عالية. أكل صحّي ولذيذ بنفس الوقت.",
+      en: "The kitchen cleanliness and packaging reflect high professionalism. Healthy and delicious at the same time.",
+      ru: "Чистота кухни и упаковка говорят о высоком профессионализме. Полезно и вкусно одновременно.",
     },
     rating: 5,
   },
