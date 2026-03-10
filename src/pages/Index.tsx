@@ -40,8 +40,9 @@ const cocktails: FoodItem[] = [
 ];
 
 const juices: FoodItem[] = [
-  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 0 },
-  { id: "carrot-lemon-juice", nameKey: "carrotLemonJuice", descKey: "carrotLemonJuiceDesc", image: carrotLemonJuice, price: 0 },
+  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 0, size: "250 ml" },
+  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 0, size: "250 ml" },
+  { id: "lemon-juice", nameKey: "lemonJuice", descKey: "lemonJuiceDesc", image: lemonJuice, price: 0, size: "250 ml" },
 ];
 
 const allItems = [...meals, ...snacks, ...cocktails, ...juices];

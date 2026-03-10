@@ -7,6 +7,7 @@ export interface FoodItem {
   descKey: string;
   image: string;
   price: number;
+  size?: string;
 }
 
 interface FoodCardProps {
