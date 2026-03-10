@@ -20,12 +20,18 @@ const CartDrawer = ({ open, onClose, cart, items, onAdd, onRemove }: CartDrawerP
   const cartItems = items.filter((item) => cart[item.id] > 0);
   const total = cartItems.reduce((sum, item) => sum + item.price * cart[item.id], 0);
 
-  const handleOrder = () => {
+  const handleOrder = async () => {
     const orderText = cartItems
       .map((item) => `${t(item.nameKey as any)} x${cart[item.id]}`)
       .join("\n");
-    const msg = encodeURIComponent(`🛒 طلب جديد / New Order:\n\n${orderText}\n\n💰 ${t("total")}: ${total.toLocaleString()} ${t("currency")}`);
-    window.open(`${TELEGRAM_URL}?text=${msg}`, "_blank");
+    const msg = `🛒 طلب جديد:\n\n${orderText}`;
+    try {
+      await navigator.clipboard.writeText(msg);
+      toast.success(dir === "rtl" ? "تم نسخ الطلب! الصقه في المحادثة 📋" : "Order copied! Paste it in the chat 📋");
+    } catch {
+      toast.info(msg);
+    }
+    window.open("https://t.me/Illuminatingpoison", "_blank");
   };
 
   return (
