@@ -31,7 +31,12 @@ const FoodCard = ({ item, quantity, onAdd, onRemove }: FoodCardProps) => {
         />
       </div>
       <div className="p-4">
-        <h3 className="text-lg font-bold text-foreground mb-1">{t(item.nameKey as any)}</h3>
+        <div className="flex items-center justify-between mb-1">
+          <h3 className="text-lg font-bold text-foreground">{t(item.nameKey as any)}</h3>
+          {item.size && (
+            <span className="text-xs font-medium bg-accent text-accent-foreground px-2 py-0.5 rounded-full">{item.size}</span>
+          )}
+        </div>
         <p className="text-sm text-muted-foreground mb-3">{t(item.descKey as any)}</p>
         <div className="flex items-center justify-end">
           {quantity === 0 ? (
