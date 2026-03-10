@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo } from "react";
 import { useI18n } from "@/lib/i18n";
+import { toast } from "sonner";
 import Header from "@/components/Header";
 import FoodCard, { FoodItem } from "@/components/FoodCard";
 import CartDrawer from "@/components/CartDrawer";
@@ -49,7 +50,7 @@ const juices: FoodItem[] = [
 const allItems = [...meals, ...snacks, ...cocktails, ...juices];
 
 const Index = () => {
-  const { t } = useI18n();
+  const { t, dir } = useI18n();
   const [cart, setCart] = useState<Record<string, number>>({});
   const [cartOpen, setCartOpen] = useState(false);
 
@@ -70,13 +71,20 @@ const Index = () => {
 
   const cartItems = useMemo(() => allItems.filter((item) => cart[item.id] > 0), [cart]);
 
-  const sendToTelegram = useCallback(() => {
+  const sendToTelegram = useCallback(async () => {
     const orderText = cartItems
       .map((item) => `${t(item.nameKey as any)} x${cart[item.id]}`)
       .join("\n");
-    const msg = encodeURIComponent(`🛒 طلب جديد:\n\n${orderText}`);
-    window.open(`https://t.me/Illuminatingpoison?text=${msg}`, "_blank");
-  }, [cartItems, cart, t]);
+    const msg = `🛒 طلب جديد:\n\n${orderText}`;
+    
+    try {
+      await navigator.clipboard.writeText(msg);
+      toast.success(dir === "rtl" ? "تم نسخ الطلب! الصقه في المحادثة 📋" : "Order copied! Paste it in the chat 📋");
+    } catch {
+      toast.info(msg);
+    }
+    window.open("https://t.me/Illuminatingpoison", "_blank");
+  }, [cartItems, cart, t, dir]);
 
   return (
     <div className="min-h-screen bg-background">
