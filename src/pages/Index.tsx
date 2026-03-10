@@ -116,6 +116,38 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Cocktails */}
+      <section className="container mx-auto px-4 pb-12">
+        <h2 className="text-3xl font-bold text-foreground mb-8 text-center">{t("cocktailsSection")}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {cocktails.map((item) => (
+            <FoodCard
+              key={item.id}
+              item={item}
+              quantity={cart[item.id] || 0}
+              onAdd={() => addItem(item.id)}
+              onRemove={() => removeItem(item.id)}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Juices */}
+      <section className="container mx-auto px-4 pb-12">
+        <h2 className="text-3xl font-bold text-foreground mb-8 text-center">{t("juicesSection")}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {juices.map((item) => (
+            <FoodCard
+              key={item.id}
+              item={item}
+              quantity={cart[item.id] || 0}
+              onAdd={() => addItem(item.id)}
+              onRemove={() => removeItem(item.id)}
+            />
+          ))}
+        </div>
+      </section>
+
       {/* Testimonials */}
       <Testimonials />
 
