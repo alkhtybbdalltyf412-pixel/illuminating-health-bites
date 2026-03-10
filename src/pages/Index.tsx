@@ -16,7 +16,8 @@ import nutBars from "@/assets/nut-bars.jpg";
 import bananaCocktail from "@/assets/banana-cocktail.jpg";
 import avocadoCocktail from "@/assets/avocado-cocktail.jpg";
 import orangeJuice from "@/assets/orange-juice.jpg";
-import carrotLemonJuice from "@/assets/carrot-lemon-juice.jpg";
+import carrotJuice from "@/assets/carrot-juice.jpg";
+import lemonJuice from "@/assets/lemon-juice.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
