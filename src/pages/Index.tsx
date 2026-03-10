@@ -1,9 +1,10 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { useI18n } from "@/lib/i18n";
 import Header from "@/components/Header";
 import FoodCard, { FoodItem } from "@/components/FoodCard";
 import CartDrawer from "@/components/CartDrawer";
 import Testimonials from "@/components/Testimonials";
+import { Send } from "lucide-react";
 
 import riceChicken from "@/assets/rice-chicken.jpg";
 import grilledWings from "@/assets/grilled-wings.jpg";
@@ -66,6 +67,16 @@ const Index = () => {
   }, []);
 
   const cartCount = Object.values(cart).reduce((s, n) => s + n, 0);
+
+  const cartItems = useMemo(() => allItems.filter((item) => cart[item.id] > 0), [cart]);
+
+  const sendToTelegram = useCallback(() => {
+    const orderText = cartItems
+      .map((item) => `${t(item.nameKey as any)} x${cart[item.id]}`)
+      .join("\n");
+    const msg = encodeURIComponent(`🛒 طلب جديد:\n\n${orderText}`);
+    window.open(`https://t.me/Illuminatingpoison?text=${msg}`, "_blank");
+  }, [cartItems, cart, t]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -155,10 +166,11 @@ const Index = () => {
 
       {cartCount > 0 && (
         <button
-          onClick={() => setCartOpen(true)}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-lg font-bold text-lg md:hidden"
+          onClick={sendToTelegram}
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-lg font-bold text-lg"
         >
-          {t("myOrder")} ({cartCount} {t("items")})
+          <Send className="w-5 h-5" />
+          {t("orderOnTelegram")} ({cartCount})
         </button>
       )}
 
