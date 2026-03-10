@@ -71,13 +71,20 @@ const Index = () => {
 
   const cartItems = useMemo(() => allItems.filter((item) => cart[item.id] > 0), [cart]);
 
-  const sendToTelegram = useCallback(() => {
+  const sendToTelegram = useCallback(async () => {
     const orderText = cartItems
       .map((item) => `${t(item.nameKey as any)} x${cart[item.id]}`)
       .join("\n");
-    const msg = encodeURIComponent(`🛒 طلب جديد:\n\n${orderText}`);
-    window.open(`https://t.me/Illuminatingpoison?text=${msg}`, "_blank");
-  }, [cartItems, cart, t]);
+    const msg = `🛒 طلب جديد:\n\n${orderText}`;
+    
+    try {
+      await navigator.clipboard.writeText(msg);
+      toast.success(dir === "rtl" ? "تم نسخ الطلب! الصقه في المحادثة 📋" : "Order copied! Paste it in the chat 📋");
+    } catch {
+      toast.info(msg);
+    }
+    window.open("https://t.me/Illuminatingpoison", "_blank");
+  }, [cartItems, cart, t, dir]);
 
   return (
     <div className="min-h-screen bg-background">
