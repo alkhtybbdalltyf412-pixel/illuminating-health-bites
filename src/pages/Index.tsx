@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import FoodCard, { FoodItem } from "@/components/FoodCard";
 import CartDrawer from "@/components/CartDrawer";
 import Testimonials from "@/components/Testimonials";
+import { Send } from "lucide-react";
 
 import riceChicken from "@/assets/rice-chicken.jpg";
 import grilledWings from "@/assets/grilled-wings.jpg";
