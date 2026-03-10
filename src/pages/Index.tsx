@@ -165,10 +165,11 @@ const Index = () => {
 
       {cartCount > 0 && (
         <button
-          onClick={() => setCartOpen(true)}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-lg font-bold text-lg md:hidden"
+          onClick={sendToTelegram}
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-lg font-bold text-lg"
         >
-          {t("myOrder")} ({cartCount} {t("items")})
+          <Send className="w-5 h-5" />
+          {t("orderOnTelegram")} ({cartCount})
         </button>
       )}
 
