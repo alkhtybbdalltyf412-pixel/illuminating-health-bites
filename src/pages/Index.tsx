@@ -50,7 +50,7 @@ const juices: FoodItem[] = [
 const allItems = [...meals, ...snacks, ...cocktails, ...juices];
 
 const Index = () => {
-  const { t } = useI18n();
+  const { t, dir } = useI18n();
   const [cart, setCart] = useState<Record<string, number>>({});
   const [cartOpen, setCartOpen] = useState(false);
 
