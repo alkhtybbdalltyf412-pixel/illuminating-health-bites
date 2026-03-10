@@ -67,6 +67,16 @@ const Index = () => {
 
   const cartCount = Object.values(cart).reduce((s, n) => s + n, 0);
 
+  const cartItems = useMemo(() => allItems.filter((item) => cart[item.id] > 0), [cart]);
+
+  const sendToTelegram = useCallback(() => {
+    const orderText = cartItems
+      .map((item) => `${t(item.nameKey as any)} x${cart[item.id]}`)
+      .join("\n");
+    const msg = encodeURIComponent(`🛒 طلب جديد:\n\n${orderText}`);
+    window.open(`https://t.me/Illuminatingpoison?text=${msg}`, "_blank");
+  }, [cartItems, cart, t]);
+
   return (
     <div className="min-h-screen bg-background">
       <Header cartCount={cartCount} onCartClick={() => setCartOpen(true)} />
