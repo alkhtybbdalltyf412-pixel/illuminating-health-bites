@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { useI18n } from "@/lib/i18n";
 import Header from "@/components/Header";
 import FoodCard, { FoodItem } from "@/components/FoodCard";
