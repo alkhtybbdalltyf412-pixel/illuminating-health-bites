@@ -79,11 +79,17 @@ const translations = {
     en: "Fresh natural orange juice with no added sugar",
     ru: "Свежевыжатый апельсиновый сок без сахара",
   },
-  carrotLemonJuice: { ar: "عصير الجزر والليمون", en: "Carrot & Lemon Juice", ru: "Морковно-лимонный сок" },
-  carrotLemonJuiceDesc: {
-    ar: "عصير جزر طازج مع لمسة ليمون منعشة",
-    en: "Fresh carrot juice with a refreshing lemon twist",
-    ru: "Свежий морковный сок с освежающим лимоном",
+  carrotJuice: { ar: "عصير الجزر", en: "Carrot Juice", ru: "Морковный сок" },
+  carrotJuiceDesc: {
+    ar: "عصير جزر طبيعي طازج غني بالفيتامينات",
+    en: "Fresh natural carrot juice rich in vitamins",
+    ru: "Свежий натуральный морковный сок, богатый витаминами",
+  },
+  lemonJuice: { ar: "عصير الليمون", en: "Lemon Juice", ru: "Лимонный сок" },
+  lemonJuiceDesc: {
+    ar: "عصير ليمون منعش طبيعي بدون سكّر مُضاف",
+    en: "Refreshing natural lemon juice with no added sugar",
+    ru: "Освежающий натуральный лимонный сок без сахара",
   },
   addToOrder: { ar: "أضف للطلب", en: "Add to Order", ru: "Добавить в заказ" },
   removeFromOrder: { ar: "إزالة", en: "Remove", ru: "Удалить" },
