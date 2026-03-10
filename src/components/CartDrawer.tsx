@@ -1,4 +1,5 @@
 import { useI18n } from "@/lib/i18n";
+import { toast } from "sonner";
 import { X, Send, Minus, Plus } from "lucide-react";
 import { FoodItem } from "./FoodCard";
 
