@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo } from "react";
 import { useI18n } from "@/lib/i18n";
+import { toast } from "sonner";
 import Header from "@/components/Header";
 import FoodCard, { FoodItem } from "@/components/FoodCard";
 import CartDrawer from "@/components/CartDrawer";
