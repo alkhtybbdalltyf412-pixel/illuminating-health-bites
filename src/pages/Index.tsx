@@ -172,6 +172,7 @@ const Index = () => {
 
       {/* Testimonials */}
       <Testimonials />
+      <ReviewForm />
 
       {cartCount > 0 && (
         <button
