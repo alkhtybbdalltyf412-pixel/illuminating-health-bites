@@ -53,6 +53,12 @@ const translations = {
     en: "Healthy nut bars coated with shredded coconut",
     ru: "Полезные ореховые батончики с кокосовой стружкой",
   },
+  healthyBread: { ar: "خبز صحّي", en: "Healthy Bread", ru: "Полезный хлеб" },
+  healthyBreadDesc: {
+    ar: "خبز منزلي صحّي طازج محضّر بعناية",
+    en: "Fresh homemade healthy bread carefully prepared",
+    ru: "Свежий домашний полезный хлеб, приготовленный с заботой",
+  },
   shawarma: { ar: "شاورما سوريّة", en: "Syrian Shawarma", ru: "Сирийская шаурма" },
   shawarmaDesc: {
     ar: "شاورما دجاج سوريّة أصيلة مع مخلّلات وصوص ثوم",

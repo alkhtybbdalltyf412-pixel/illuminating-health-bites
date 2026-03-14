@@ -21,6 +21,7 @@ import avocadoCocktail from "@/assets/avocado-cocktail.jpg";
 import orangeJuice from "@/assets/orange-juice.jpg";
 import carrotJuice from "@/assets/carrot-juice.jpg";
 import lemonJuice from "@/assets/lemon-juice.jpg";
+import healthyBread from "@/assets/healthy-bread.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
@@ -28,6 +29,7 @@ const meals: FoodItem[] = [
   { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 0 },
   { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 0 },
   { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 0 },
+  { id: "healthy-bread", nameKey: "healthyBread", descKey: "healthyBreadDesc", image: healthyBread, price: 0 },
 ];
 
 const snacks: FoodItem[] = [
