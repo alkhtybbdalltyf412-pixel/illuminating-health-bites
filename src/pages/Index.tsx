@@ -37,8 +37,8 @@ const snacks: FoodItem[] = [
 ];
 
 const cocktails: FoodItem[] = [
-  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 0 },
-  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 0 },
+  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 0, size: "250 ml" },
+  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 0, size: "250 ml" },
 ];
 
 const juices: FoodItem[] = [
