@@ -100,6 +100,12 @@ const translations = {
   currency: { ar: "د.ع", en: "IQD", ru: "IQD" },
   orderOnTelegram: { ar: "أكمل الطلب عبر تلغرام", en: "Complete order on Telegram", ru: "Завершить заказ в Telegram" },
   items: { ar: "عنصر", en: "items", ru: "шт." },
+  reviewSection: { ar: "قيّمنا", en: "Rate Us", ru: "Оцените нас" },
+  yourName: { ar: "اسمك", en: "Your Name", ru: "Ваше имя" },
+  yourReview: { ar: "اكتب تقييمك هنا...", en: "Write your review here...", ru: "Напишите отзыв..." },
+  sendReview: { ar: "إرسال التقييم", en: "Send Review", ru: "Отправить отзыв" },
+  reviewSent: { ar: "تم نسخ التقييم! الصقه في المحادثة 📋", en: "Review copied! Paste it in the chat 📋", ru: "Отзыв скопирован! Вставьте в чат 📋" },
+  ratingRequired: { ar: "يرجى اختيار التقييم", en: "Please select a rating", ru: "Пожалуйста, выберите оценку" },
 } as const;
 
 type TranslationKey = keyof typeof translations;
