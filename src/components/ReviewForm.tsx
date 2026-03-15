@@ -3,7 +3,7 @@ import { useI18n } from "@/lib/i18n";
 import { toast } from "sonner";
 import { Star, Send } from "lucide-react";
 
-const TELEGRAM_URL = "https://t.me/Illuminatingpoison";
+const TELEGRAM_REVIEW = "https://t.me/ALKHATIB543";
 
 const ReviewForm = () => {
   const { t, dir } = useI18n();
@@ -28,7 +28,7 @@ const ReviewForm = () => {
       toast.info(msg);
     }
 
-    window.open(TELEGRAM_URL, "_blank");
+    window.open(TELEGRAM_REVIEW, "_blank");
     setName("");
     setReview("");
     setRating(0);
@@ -40,7 +40,6 @@ const ReviewForm = () => {
         {t("reviewSection")}
       </h2>
       <div className="max-w-md mx-auto bg-card rounded-xl p-6 card-elevated space-y-4">
-        {/* Star Rating */}
         <div className="flex justify-center gap-1">
           {[1, 2, 3, 4, 5].map((star) => (
             <button
@@ -62,7 +61,6 @@ const ReviewForm = () => {
           ))}
         </div>
 
-        {/* Name */}
         <input
           type="text"
           value={name}
@@ -72,7 +70,6 @@ const ReviewForm = () => {
           className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
         />
 
-        {/* Review */}
         <textarea
           value={review}
           onChange={(e) => setReview(e.target.value)}
@@ -82,7 +79,6 @@ const ReviewForm = () => {
           className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
         />
 
-        {/* Submit */}
         <button
           onClick={handleSubmit}
           disabled={!review.trim()}

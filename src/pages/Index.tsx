@@ -6,51 +6,48 @@ import FoodCard, { FoodItem } from "@/components/FoodCard";
 import CartDrawer from "@/components/CartDrawer";
 import Testimonials from "@/components/Testimonials";
 import ReviewForm from "@/components/ReviewForm";
+import InfoSection from "@/components/InfoSection";
 import { Send } from "lucide-react";
 
-import riceChicken from "@/assets/rice-chicken.jpg";
 import grilledWings from "@/assets/grilled-wings.jpg";
 import fajita from "@/assets/fajita.jpg";
 import shawarma from "@/assets/shawarma.jpg";
 import dateBalls from "@/assets/date-balls.jpg";
-import coconutBalls from "@/assets/coconut-balls.jpg";
 import stuffedDates from "@/assets/stuffed-dates.jpg";
 import nutBars from "@/assets/nut-bars.jpg";
 import bananaCocktail from "@/assets/banana-cocktail.jpg";
 import avocadoCocktail from "@/assets/avocado-cocktail.jpg";
 import orangeJuice from "@/assets/orange-juice.jpg";
 import carrotJuice from "@/assets/carrot-juice.jpg";
-import lemonJuice from "@/assets/lemon-juice.jpg";
 import healthyBread from "@/assets/healthy-bread.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
-  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 0 },
-  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 0 },
-  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 0 },
-  { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 0 },
-  { id: "healthy-bread", nameKey: "healthyBread", descKey: "healthyBreadDesc", image: healthyBread, price: 0 },
+  { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 200 },
+  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 200 },
+  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 200 },
 ];
 
 const snacks: FoodItem[] = [
-  { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 0 },
-  { id: "coconut-balls", nameKey: "coconutBalls", descKey: "coconutBallsDesc", image: coconutBalls, price: 0 },
-  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 0 },
-  { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 0 },
+  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 250 },
+  { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 250 },
+  { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 300 },
 ];
 
-const cocktails: FoodItem[] = [
-  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 0, size: "250 ml" },
-  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 0, size: "250 ml" },
+const drinks: FoodItem[] = [
+  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 200, size: "250 ml" },
+  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 150, size: "250 ml" },
+  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 150, size: "250 ml" },
+  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 250, size: "250 ml" },
 ];
 
-const juices: FoodItem[] = [
-  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 0, size: "250 ml" },
-  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 0, size: "250 ml" },
-  { id: "lemon-juice", nameKey: "lemonJuice", descKey: "lemonJuiceDesc", image: lemonJuice, price: 0, size: "250 ml" },
+const bakery: FoodItem[] = [
+  { id: "healthy-bread", nameKey: "healthyBread", descKey: "healthyBreadDesc", image: healthyBread, price: 100 },
 ];
 
-const allItems = [...meals, ...snacks, ...cocktails, ...juices];
+const allItems = [...meals, ...snacks, ...drinks, ...bakery];
+
+const TELEGRAM_ORDER = "https://t.me/ALKHATIB543";
 
 const Index = () => {
   const { t, dir } = useI18n();
@@ -71,23 +68,44 @@ const Index = () => {
   }, []);
 
   const cartCount = Object.values(cart).reduce((s, n) => s + n, 0);
-
   const cartItems = useMemo(() => allItems.filter((item) => cart[item.id] > 0), [cart]);
+
+  const cartTotal = useMemo(
+    () => cartItems.reduce((sum, item) => sum + item.price * cart[item.id], 0),
+    [cartItems, cart]
+  );
 
   const sendToTelegram = useCallback(async () => {
     const orderText = cartItems
-      .map((item) => `${t(item.nameKey as any)} x${cart[item.id]}`)
+      .map((item) => `${t(item.nameKey as any)} x${cart[item.id]} — ${item.price * cart[item.id]}₽`)
       .join("\n");
-    const msg = `🛒 طلب جديد:\n\n${orderText}`;
-    
+    const msg = `🛒 طلب جديد:\n\n${orderText}\n\n💰 المجموع: ${cartTotal}₽`;
+
     try {
       await navigator.clipboard.writeText(msg);
       toast.success(dir === "rtl" ? "تم نسخ الطلب! الصقه في المحادثة 📋" : "Order copied! Paste it in the chat 📋");
     } catch {
       toast.info(msg);
     }
-    window.open("https://t.me/Illuminatingpoison", "_blank");
-  }, [cartItems, cart, t, dir]);
+    window.open(TELEGRAM_ORDER, "_blank");
+  }, [cartItems, cart, t, dir, cartTotal]);
+
+  const Section = ({ titleKey, items }: { titleKey: string; items: FoodItem[] }) => (
+    <section className="container mx-auto px-4 pb-12">
+      <h2 className="text-3xl font-bold text-foreground mb-8 text-center">{t(titleKey as any)}</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {items.map((item) => (
+          <FoodCard
+            key={item.id}
+            item={item}
+            quantity={cart[item.id] || 0}
+            onAdd={() => addItem(item.id)}
+            onRemove={() => removeItem(item.id)}
+          />
+        ))}
+      </div>
+    </section>
+  );
 
   return (
     <div className="min-h-screen bg-background">
@@ -108,71 +126,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Meals */}
-      <section className="container mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold text-foreground mb-8 text-center">{t("mealsSection")}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {meals.map((item) => (
-            <FoodCard
-              key={item.id}
-              item={item}
-              quantity={cart[item.id] || 0}
-              onAdd={() => addItem(item.id)}
-              onRemove={() => removeItem(item.id)}
-            />
-          ))}
-        </div>
-      </section>
+      <div className="pt-12" />
+      <Section titleKey="mealsSection" items={meals} />
+      <Section titleKey="juicesSection" items={drinks} />
+      <Section titleKey="snacksSection" items={snacks} />
+      <Section titleKey="bakerySection" items={bakery} />
 
-      {/* Snacks */}
-      <section className="container mx-auto px-4 pb-12">
-        <h2 className="text-3xl font-bold text-foreground mb-8 text-center">{t("snacksSection")}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {snacks.map((item) => (
-            <FoodCard
-              key={item.id}
-              item={item}
-              quantity={cart[item.id] || 0}
-              onAdd={() => addItem(item.id)}
-              onRemove={() => removeItem(item.id)}
-            />
-          ))}
-        </div>
-      </section>
+      {/* Info Notes */}
+      <InfoSection />
 
-      {/* Cocktails */}
-      <section className="container mx-auto px-4 pb-12">
-        <h2 className="text-3xl font-bold text-foreground mb-8 text-center">{t("cocktailsSection")}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cocktails.map((item) => (
-            <FoodCard
-              key={item.id}
-              item={item}
-              quantity={cart[item.id] || 0}
-              onAdd={() => addItem(item.id)}
-              onRemove={() => removeItem(item.id)}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* Juices */}
-      <section className="container mx-auto px-4 pb-12">
-        <h2 className="text-3xl font-bold text-foreground mb-8 text-center">{t("juicesSection")}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {juices.map((item) => (
-            <FoodCard
-              key={item.id}
-              item={item}
-              quantity={cart[item.id] || 0}
-              onAdd={() => addItem(item.id)}
-              onRemove={() => removeItem(item.id)}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* Testimonials */}
+      {/* Testimonials & Review */}
       <Testimonials />
       <ReviewForm />
 
@@ -182,7 +145,7 @@ const Index = () => {
           className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-lg font-bold text-lg"
         >
           <Send className="w-5 h-5" />
-          {t("orderOnTelegram")} ({cartCount})
+          {t("orderOnTelegram")} ({cartCount}) — {cartTotal}₽
         </button>
       )}
 
