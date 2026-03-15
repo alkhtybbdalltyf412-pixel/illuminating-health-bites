@@ -12,7 +12,7 @@ interface CartDrawerProps {
   onRemove: (id: string) => void;
 }
 
-const TELEGRAM_URL = "https://t.me/Illuminatingpoison";
+const TELEGRAM_ORDER = "https://t.me/ALKHATIB543";
 
 const CartDrawer = ({ open, onClose, cart, items, onAdd, onRemove }: CartDrawerProps) => {
   const { t, dir } = useI18n();
@@ -22,16 +22,16 @@ const CartDrawer = ({ open, onClose, cart, items, onAdd, onRemove }: CartDrawerP
 
   const handleOrder = async () => {
     const orderText = cartItems
-      .map((item) => `${t(item.nameKey as any)} x${cart[item.id]}`)
+      .map((item) => `${t(item.nameKey as any)} x${cart[item.id]} — ${item.price * cart[item.id]}₽`)
       .join("\n");
-    const msg = `🛒 طلب جديد:\n\n${orderText}`;
+    const msg = `🛒 طلب جديد:\n\n${orderText}\n\n💰 المجموع: ${total}₽`;
     try {
       await navigator.clipboard.writeText(msg);
       toast.success(dir === "rtl" ? "تم نسخ الطلب! الصقه في المحادثة 📋" : "Order copied! Paste it in the chat 📋");
     } catch {
       toast.info(msg);
     }
-    window.open("https://t.me/Illuminatingpoison", "_blank");
+    window.open(TELEGRAM_ORDER, "_blank");
   };
 
   return (
@@ -69,6 +69,7 @@ const CartDrawer = ({ open, onClose, cart, items, onAdd, onRemove }: CartDrawerP
                   />
                   <div className="flex-1">
                     <h4 className="font-semibold text-foreground text-sm">{t(item.nameKey as any)}</h4>
+                    <p className="text-xs text-muted-foreground">{item.price}₽ × {cart[item.id]} = {item.price * cart[item.id]}₽</p>
                   </div>
                   <div className="flex items-center gap-1">
                     <button
@@ -92,6 +93,10 @@ const CartDrawer = ({ open, onClose, cart, items, onAdd, onRemove }: CartDrawerP
 
           {cartItems.length > 0 && (
             <div className="p-4 border-t border-border space-y-3">
+              <div className="flex items-center justify-between text-lg font-bold text-foreground">
+                <span>{t("total")}</span>
+                <span>{total}₽</span>
+              </div>
               <button
                 onClick={handleOrder}
                 className="w-full flex items-center justify-center gap-2 py-3 bg-primary text-primary-foreground rounded-xl font-bold text-lg hover:opacity-90 transition-opacity"

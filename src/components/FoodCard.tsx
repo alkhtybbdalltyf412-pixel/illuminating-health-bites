@@ -37,7 +37,10 @@ const FoodCard = ({ item, quantity, onAdd, onRemove }: FoodCardProps) => {
             <span className="text-xs font-medium bg-accent text-accent-foreground px-2 py-0.5 rounded-full">{item.size}</span>
           )}
         </div>
-        <p className="text-sm text-muted-foreground mb-3">{t(item.descKey as any)}</p>
+        <p className="text-sm text-muted-foreground mb-2">{t(item.descKey as any)}</p>
+        {item.price > 0 && (
+          <p className="text-base font-bold text-primary mb-3">{item.price}₽</p>
+        )}
         <div className="flex items-center justify-end">
           {quantity === 0 ? (
             <button
