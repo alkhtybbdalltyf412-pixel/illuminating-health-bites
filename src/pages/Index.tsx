@@ -10,6 +10,7 @@ import InfoSection from "@/components/InfoSection";
 import { Send } from "lucide-react";
 
 import grilledWings from "@/assets/grilled-wings.jpg";
+import riceChicken from "@/assets/rice-chicken.jpg";
 import fajita from "@/assets/fajita.jpg";
 import shawarma from "@/assets/shawarma.jpg";
 import dateBalls from "@/assets/date-balls.jpg";
@@ -26,6 +27,7 @@ const meals: FoodItem[] = [
   { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 200 },
   { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 200 },
   { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 200 },
+  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 200 },
 ];
 
 const snacks: FoodItem[] = [

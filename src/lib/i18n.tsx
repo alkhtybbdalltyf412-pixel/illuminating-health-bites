@@ -79,6 +79,12 @@ const translations = {
     ru: "250 мл — 100% натуральный",
   },
 
+  riceChicken: { ar: "صدر دجاج المنير مع الرز", en: "Chicken Breast & Rice", ru: "Куриная грудка с рисом" },
+  riceChickenDesc: {
+    ar: "وجبة — صدر دجاج مقلي بكمية قليلة من زيت الزيتون مع رز بسمتي نثري",
+    en: "Chicken breast lightly fried in olive oil with fluffy basmati rice",
+    ru: "Куриная грудка, слегка обжаренная в оливковом масле, с рассыпчатым рисом басмати",
+  },
   healthyBread: { ar: "خبز المنير الصحّي", en: "Healthy Bread", ru: "Полезный хлеб" },
   healthyBreadDesc: {
     ar: "ربطة 250 غرام — قمح كامل",
