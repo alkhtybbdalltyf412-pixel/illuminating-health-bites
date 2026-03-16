@@ -10,6 +10,7 @@ import InfoSection from "@/components/InfoSection";
 import { Send } from "lucide-react";
 
 import grilledWings from "@/assets/grilled-wings.jpg";
+import riceChicken from "@/assets/rice-chicken.jpg";
 import fajita from "@/assets/fajita.jpg";
 import shawarma from "@/assets/shawarma.jpg";
 import dateBalls from "@/assets/date-balls.jpg";
