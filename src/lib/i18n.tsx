@@ -127,6 +127,11 @@ const translations = {
     en: "📢 Visit Channel",
     ru: "📢 Посетить канал",
   },
+  comingSoon: {
+    ar: "سيكون متاح قريباً 🔜",
+    en: "Coming Soon 🔜",
+    ru: "Скоро в наличии 🔜",
+  },
 } as const;
 
 type TranslationKey = keyof typeof translations;
