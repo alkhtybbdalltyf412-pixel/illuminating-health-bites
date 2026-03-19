@@ -37,10 +37,10 @@ const snacks: FoodItem[] = [
 ];
 
 const drinks: FoodItem[] = [
-  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 200, size: "250 ml", comingSoon: true },
-  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 150, size: "250 ml", comingSoon: true },
-  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 150, size: "250 ml", comingSoon: true },
-  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 250, size: "250 ml", comingSoon: true },
+  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 200, size: "250 ml" },
+  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 150, size: "250 ml" },
+  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 150, size: "250 ml" },
+  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 250, size: "250 ml" },
 ];
 
 const bakery: FoodItem[] = [
