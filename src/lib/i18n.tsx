@@ -132,6 +132,54 @@ const translations = {
     en: "Coming Soon 🔜",
     ru: "Скоро в наличии 🔜",
   },
+
+  // About Section
+  aboutTitle: { ar: "من نحن", en: "About Us", ru: "О нас" },
+  aboutDescription: {
+    ar: "مطبخ المنير — مطبخ سوري متخصّص بالأكل الصحّي في موسكو. نؤمن بأن الطعام الصحي يمكن أن يكون لذيذاً ومشبعاً. نستخدم أجود المكوّنات الطبيعية مثل زيت الزيتون والأرز البسمتي والتوابل الشرقية الأصيلة.",
+    en: "Al-Munir Kitchen — A Syrian kitchen specializing in healthy food in Moscow. We believe healthy food can be delicious and satisfying. We use the finest natural ingredients like olive oil, basmati rice, and authentic Eastern spices.",
+    ru: "Кухня Аль-Мунир — сирийская кухня здорового питания в Москве. Мы верим, что здоровая еда может быть вкусной и сытной. Используем лучшие натуральные ингредиенты: оливковое масло, рис басмати и восточные специи.",
+  },
+  aboutFeature1Title: { ar: "مكوّنات طبيعية 100%", en: "100% Natural Ingredients", ru: "100% натуральные ингредиенты" },
+  aboutFeature1Desc: {
+    ar: "لا نستخدم أي مواد حافظة أو ألوان صناعية — كل شيء طازج وطبيعي",
+    en: "No preservatives or artificial colors — everything is fresh and natural",
+    ru: "Без консервантов и красителей — всё свежее и натуральное",
+  },
+  aboutFeature2Title: { ar: "شيف سوري محترف", en: "Professional Syrian Chef", ru: "Профессиональный сирийский шеф" },
+  aboutFeature2Desc: {
+    ar: "وصفات سورية أصيلة مع لمسة صحيّة عصرية",
+    en: "Authentic Syrian recipes with a modern healthy twist",
+    ru: "Аутентичные сирийские рецепты с современным здоровым акцентом",
+  },
+  aboutFeature3Title: { ar: "صحّة بلا تنازل", en: "Health Without Compromise", ru: "Здоровье без компромиссов" },
+  aboutFeature3Desc: {
+    ar: "نطبخ بزيت الزيتون ونختار أفضل المكوّنات لصحّتك",
+    en: "We cook with olive oil and choose the best ingredients for your health",
+    ru: "Готовим на оливковом масле, выбирая лучшие ингредиенты для вашего здоровья",
+  },
+
+  // Offers Section
+  offersTitle: { ar: "عروض خاصّة 🔥", en: "Special Offers 🔥", ru: "Специальные предложения 🔥" },
+  offer1Title: { ar: "وجبة ثنائية", en: "Duo Meal Deal", ru: "Комбо на двоих" },
+  offer1Desc: {
+    ar: "أجنحة مشوية + صدر دجاج مع الرز",
+    en: "Grilled Wings + Chicken Breast with Rice",
+    ru: "Крылышки на гриле + Куриная грудка с рисом",
+  },
+  offer1Ends: { ar: "ينتهي العرض: 30 أبريل 2026", en: "Offer ends: April 30, 2026", ru: "Предложение до: 30 апреля 2026" },
+  offer2Title: { ar: "باقة السناك الصحّي", en: "Healthy Snack Bundle", ru: "Набор полезных закусок" },
+  offer2Desc: {
+    ar: "كرات تمر + بارات مكسّرات",
+    en: "Date Balls + Nut Bars",
+    ru: "Финиковые шарики + Ореховые батончики",
+  },
+  offer2Ends: { ar: "ينتهي العرض: 30 أبريل 2026", en: "Offer ends: April 30, 2026", ru: "Предложение до: 30 апреля 2026" },
+
+  // Nutrition labels
+  calories: { ar: "سعرة", en: "cal", ru: "ккал" },
+  protein: { ar: "بروتين", en: "protein", ru: "белок" },
+  carbs: { ar: "كربو", en: "carbs", ru: "углев." },
 } as const;
 
 type TranslationKey = keyof typeof translations;
