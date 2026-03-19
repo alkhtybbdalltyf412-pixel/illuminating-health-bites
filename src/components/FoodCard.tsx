@@ -43,7 +43,11 @@ const FoodCard = ({ item, quantity, onAdd, onRemove }: FoodCardProps) => {
           <p className="text-base font-bold text-primary mb-3">{item.price}₽</p>
         )}
         <div className="flex items-center justify-end">
-          {quantity === 0 ? (
+          {item.comingSoon ? (
+            <span className="px-4 py-2 bg-muted text-muted-foreground rounded-full text-sm font-medium">
+              {t("comingSoon")}
+            </span>
+          ) : quantity === 0 ? (
             <button
               onClick={onAdd}
               className="flex items-center gap-1 px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:opacity-90 transition-opacity"

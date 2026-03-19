@@ -44,7 +44,7 @@ const drinks: FoodItem[] = [
 ];
 
 const bakery: FoodItem[] = [
-  { id: "healthy-bread", nameKey: "healthyBread", descKey: "healthyBreadDesc", image: healthyBread, price: 100 },
+  { id: "healthy-bread", nameKey: "healthyBread", descKey: "healthyBreadDesc", image: healthyBread, price: 100, comingSoon: true },
 ];
 
 const allItems = [...meals, ...snacks, ...drinks, ...bakery];
