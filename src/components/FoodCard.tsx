@@ -8,6 +8,7 @@ export interface FoodItem {
   image: string;
   price: number;
   size?: string;
+  comingSoon?: boolean;
 }
 
 interface FoodCardProps {
