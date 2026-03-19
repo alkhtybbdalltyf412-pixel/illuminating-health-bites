@@ -7,6 +7,8 @@ import CartDrawer from "@/components/CartDrawer";
 import Testimonials from "@/components/Testimonials";
 import ReviewForm from "@/components/ReviewForm";
 import InfoSection from "@/components/InfoSection";
+import AboutSection from "@/components/AboutSection";
+import OffersSection from "@/components/OffersSection";
 import { Send } from "lucide-react";
 
 import grilledWings from "@/assets/grilled-wings.jpg";
@@ -24,27 +26,27 @@ import healthyBread from "@/assets/healthy-bread.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
-  { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 200, comingSoon: true },
-  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 200, comingSoon: true },
-  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 200 },
-  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 200 },
+  { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 200, comingSoon: true, nutrition: { calories: 350, protein: 22, carbs: 30 } },
+  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 200, comingSoon: true, nutrition: { calories: 280, protein: 24, carbs: 18 } },
+  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 200, nutrition: { calories: 320, protein: 28, carbs: 5 } },
+  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 200, nutrition: { calories: 400, protein: 30, carbs: 42 } },
 ];
 
 const snacks: FoodItem[] = [
-  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 250, comingSoon: true },
-  { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 250 },
-  { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 300 },
+  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 250, comingSoon: true, nutrition: { calories: 220, protein: 5, carbs: 35 } },
+  { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 250, nutrition: { calories: 180, protein: 4, carbs: 28 } },
+  { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 300, nutrition: { calories: 250, protein: 8, carbs: 22 } },
 ];
 
 const drinks: FoodItem[] = [
-  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 200, size: "250 ml" },
-  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 150, size: "250 ml" },
-  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 150, size: "250 ml", comingSoon: true },
-  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 250, size: "250 ml", comingSoon: true },
+  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 200, size: "250 ml", nutrition: { calories: 180, protein: 3, carbs: 20 } },
+  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 150, size: "250 ml", nutrition: { calories: 140, protein: 4, carbs: 26 } },
+  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 150, size: "250 ml", comingSoon: true, nutrition: { calories: 80, protein: 1, carbs: 18 } },
+  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 250, size: "250 ml", comingSoon: true, nutrition: { calories: 110, protein: 2, carbs: 25 } },
 ];
 
 const bakery: FoodItem[] = [
-  { id: "healthy-bread", nameKey: "healthyBread", descKey: "healthyBreadDesc", image: healthyBread, price: 100, comingSoon: true },
+  { id: "healthy-bread", nameKey: "healthyBread", descKey: "healthyBreadDesc", image: healthyBread, price: 100, comingSoon: true, nutrition: { calories: 200, protein: 7, carbs: 38 } },
 ];
 
 const allItems = [...meals, ...snacks, ...drinks, ...bakery];
@@ -129,6 +131,13 @@ const Index = () => {
       </section>
 
       <div className="pt-12" />
+
+      {/* About Section */}
+      <AboutSection />
+
+      {/* Offers */}
+      <OffersSection />
+
       <Section titleKey="mealsSection" items={meals} />
       <Section titleKey="juicesSection" items={drinks} />
       <Section titleKey="snacksSection" items={snacks} />
