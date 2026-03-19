@@ -1,6 +1,12 @@
 import { useI18n } from "@/lib/i18n";
 import { Plus, Minus } from "lucide-react";
 
+export interface NutritionInfo {
+  calories: number;
+  protein: number;
+  carbs: number;
+}
+
 export interface FoodItem {
   id: string;
   nameKey: string;
@@ -9,6 +15,7 @@ export interface FoodItem {
   price: number;
   size?: string;
   comingSoon?: boolean;
+  nutrition?: NutritionInfo;
 }
 
 interface FoodCardProps {
