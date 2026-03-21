@@ -36,9 +36,10 @@ const ReviewForm = () => {
 
   return (
     <section className="container mx-auto px-4 pb-12">
-      <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+      <h2 className="text-3xl font-bold text-foreground mb-2 text-center">
         {t("reviewSection")}
       </h2>
+      <div className="section-divider" />
       <div className="max-w-md mx-auto bg-card rounded-xl p-6 card-elevated space-y-4">
         <div className="flex justify-center gap-1">
           {[1, 2, 3, 4, 5].map((star) => (

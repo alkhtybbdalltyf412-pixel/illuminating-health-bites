@@ -12,8 +12,10 @@ const AboutSection = () => {
 
   return (
     <section className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-foreground mb-4 text-center">
+      <h2 className="text-3xl font-bold text-foreground mb-2 text-center">
         {t("aboutTitle" as any)}
+      </h2>
+      <div className="section-divider" />
       </h2>
       <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12 text-lg leading-relaxed">
         {t("aboutDescription" as any)}
