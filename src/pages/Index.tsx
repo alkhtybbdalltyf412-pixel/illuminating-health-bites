@@ -134,9 +134,6 @@ const Index = () => {
       {/* About Section */}
       <AboutSection />
 
-      {/* Offers */}
-      <OffersSection />
-
       <Section titleKey="mealsSection" items={meals} />
       <Section titleKey="juicesSection" items={drinks} />
       <Section titleKey="snacksSection" items={snacks} />
