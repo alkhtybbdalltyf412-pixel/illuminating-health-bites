@@ -136,9 +136,9 @@ const translations = {
   // About Section
   aboutTitle: { ar: "من نحن", en: "About Us", ru: "О нас" },
   aboutDescription: {
-    ar: "طالب سوري في السكن الجامعي، أقدّم وجبات صحية ولذيذة لكل من يهتم بجسده وصحّته. أؤمن أن الأكل الصحي مش لازم يكون ممل — بنطبخلك أكل بيغذّي جسمك وبيفرح قلبك! 💪🍽️",
-    en: "A Syrian student living in a university dorm, preparing healthy and delicious meals for anyone who cares about their body and health. We believe healthy food doesn't have to be boring — we cook food that nourishes your body and makes your heart happy! 💪🍽️",
-    ru: "Сирийский студент в общежитии, готовлю здоровые и вкусные блюда для тех, кто заботится о своём теле и здоровье. Здоровая еда не должна быть скучной — мы готовим то, что питает тело и радует душу! 💪🍽️",
+    ar: "طالب سوري في السكن الجامعي، أقدّم وجبات صحية ولذيذة لكل من يهتم بجسده وصحّته.",
+    en: "A Syrian student living in a university dorm, preparing healthy and delicious meals for anyone who cares about their body and health.",
+    ru: "Сирийский студент в общежитии, готовлю здоровые и вкусные блюда для тех, кто заботится о своём теле и здоровье.",
   },
   aboutFeature1Title: { ar: "مكوّنات طبيعية 100%", en: "100% Natural Ingredients", ru: "100% натуральные ингредиенты" },
   aboutFeature1Desc: {
