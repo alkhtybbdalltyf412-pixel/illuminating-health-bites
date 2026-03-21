@@ -146,11 +146,11 @@ const translations = {
     en: "No preservatives or artificial colors — everything is fresh and natural",
     ru: "Без консервантов и красителей — всё свежее и натуральное",
   },
-  aboutFeature2Title: { ar: "طالب سوري 🇸🇾", en: "Syrian Student 🇸🇾", ru: "Сирийский студент 🇸🇾" },
+  aboutFeature2Title: { ar: "وصفات صحية بنكهة سورية", en: "Healthy Recipes, Syrian Flavor", ru: "Здоровые рецепты с сирийским вкусом" },
   aboutFeature2Desc: {
-    ar: "وصفات سورية أصيلة من قلب البيت السوري مع لمسة صحيّة عصرية",
-    en: "Authentic Syrian home recipes with a modern healthy twist",
-    ru: "Аутентичные домашние сирийские рецепты с современным здоровым акцентом",
+    ar: "وصفات صحية بنكهة سورية أصيلة",
+    en: "Healthy recipes with authentic Syrian flavor",
+    ru: "Здоровые рецепты с настоящим сирийским вкусом",
   },
   aboutFeature3Title: { ar: "صحّة بلا تنازل", en: "Health Without Compromise", ru: "Здоровье без компромиссов" },
   aboutFeature3Desc: {
