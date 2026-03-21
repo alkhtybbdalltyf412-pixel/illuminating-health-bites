@@ -16,7 +16,6 @@ const AboutSection = () => {
         {t("aboutTitle" as any)}
       </h2>
       <div className="section-divider" />
-      </h2>
       <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12 text-lg leading-relaxed">
         {t("aboutDescription" as any)}
       </p>
