@@ -8,7 +8,6 @@ import Testimonials from "@/components/Testimonials";
 import ReviewForm from "@/components/ReviewForm";
 import InfoSection from "@/components/InfoSection";
 import AboutSection from "@/components/AboutSection";
-import OffersSection from "@/components/OffersSection";
 import { Send } from "lucide-react";
 
 import grilledWings from "@/assets/grilled-wings.jpg";
@@ -134,9 +133,6 @@ const Index = () => {
 
       {/* About Section */}
       <AboutSection />
-
-      {/* Offers */}
-      <OffersSection />
 
       <Section titleKey="mealsSection" items={meals} />
       <Section titleKey="juicesSection" items={drinks} />

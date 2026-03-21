@@ -136,9 +136,9 @@ const translations = {
   // About Section
   aboutTitle: { ar: "من نحن", en: "About Us", ru: "О нас" },
   aboutDescription: {
-    ar: "مطبخ المنير — مطبخ سوري متخصّص بالأكل الصحّي في موسكو. نؤمن بأن الطعام الصحي يمكن أن يكون لذيذاً ومشبعاً. نستخدم أجود المكوّنات الطبيعية مثل زيت الزيتون والأرز البسمتي والتوابل الشرقية الأصيلة.",
-    en: "Al-Munir Kitchen — A Syrian kitchen specializing in healthy food in Moscow. We believe healthy food can be delicious and satisfying. We use the finest natural ingredients like olive oil, basmati rice, and authentic Eastern spices.",
-    ru: "Кухня Аль-Мунир — сирийская кухня здорового питания в Москве. Мы верим, что здоровая еда может быть вкусной и сытной. Используем лучшие натуральные ингредиенты: оливковое масло, рис басмати и восточные специи.",
+    ar: "طالب سوري في السكن الجامعي، أقدّم وجبات صحية ولذيذة لكل من يهتم بجسده وصحّته. أؤمن أن الأكل الصحي مش لازم يكون ممل — بنطبخلك أكل بيغذّي جسمك وبيفرح قلبك! 💪🍽️",
+    en: "A Syrian student living in a university dorm, preparing healthy and delicious meals for anyone who cares about their body and health. We believe healthy food doesn't have to be boring — we cook food that nourishes your body and makes your heart happy! 💪🍽️",
+    ru: "Сирийский студент в общежитии, готовлю здоровые и вкусные блюда для тех, кто заботится о своём теле и здоровье. Здоровая еда не должна быть скучной — мы готовим то, что питает тело и радует душу! 💪🍽️",
   },
   aboutFeature1Title: { ar: "مكوّنات طبيعية 100%", en: "100% Natural Ingredients", ru: "100% натуральные ингредиенты" },
   aboutFeature1Desc: {
@@ -146,11 +146,11 @@ const translations = {
     en: "No preservatives or artificial colors — everything is fresh and natural",
     ru: "Без консервантов и красителей — всё свежее и натуральное",
   },
-  aboutFeature2Title: { ar: "شيف سوري محترف", en: "Professional Syrian Chef", ru: "Профессиональный сирийский шеф" },
+  aboutFeature2Title: { ar: "طالب سوري 🇸🇾", en: "Syrian Student 🇸🇾", ru: "Сирийский студент 🇸🇾" },
   aboutFeature2Desc: {
-    ar: "وصفات سورية أصيلة مع لمسة صحيّة عصرية",
-    en: "Authentic Syrian recipes with a modern healthy twist",
-    ru: "Аутентичные сирийские рецепты с современным здоровым акцентом",
+    ar: "وصفات سورية أصيلة من قلب البيت السوري مع لمسة صحيّة عصرية",
+    en: "Authentic Syrian home recipes with a modern healthy twist",
+    ru: "Аутентичные домашние сирийские рецепты с современным здоровым акцентом",
   },
   aboutFeature3Title: { ar: "صحّة بلا تنازل", en: "Health Without Compromise", ru: "Здоровье без компромиссов" },
   aboutFeature3Desc: {
