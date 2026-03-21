@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import ReviewForm from "@/components/ReviewForm";
 import InfoSection from "@/components/InfoSection";
 import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
 import { Send } from "lucide-react";
 
 import grilledWings from "@/assets/grilled-wings.jpg";
@@ -95,7 +96,8 @@ const Index = () => {
 
   const Section = ({ titleKey, items }: { titleKey: string; items: FoodItem[] }) => (
     <section className="container mx-auto px-4 pb-12">
-      <h2 className="text-3xl font-bold text-foreground mb-8 text-center">{t(titleKey as any)}</h2>
+      <h2 className="text-3xl font-bold text-foreground mb-2 text-center">{t(titleKey as any)}</h2>
+      <div className="section-divider" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item) => (
           <FoodCard
@@ -116,9 +118,9 @@ const Index = () => {
 
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[320px] overflow-hidden">
-        <img src={heroBanner} alt="Healthy food" className="w-full h-full object-cover" />
+        <img src={heroBanner} alt="Healthy food" className="w-full h-full object-cover" loading="eager" />
         <div className="absolute inset-0 hero-gradient flex items-center justify-center text-center px-4">
-          <div>
+          <div className="fade-in-section">
             <h1 className="text-4xl md:text-6xl font-extrabold text-primary-foreground mb-3 drop-shadow-lg">
               {t("storeName")}
             </h1>
@@ -131,7 +133,6 @@ const Index = () => {
 
       <div className="pt-12" />
 
-      {/* About Section */}
       <AboutSection />
 
       <Section titleKey="mealsSection" items={meals} />
@@ -139,17 +140,17 @@ const Index = () => {
       <Section titleKey="snacksSection" items={snacks} />
       <Section titleKey="bakerySection" items={bakery} />
 
-      {/* Info Notes */}
       <InfoSection />
 
-      {/* Testimonials & Review */}
       <Testimonials />
       <ReviewForm />
+
+      <Footer />
 
       {cartCount > 0 && (
         <button
           onClick={sendToTelegram}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-lg font-bold text-lg"
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full shadow-lg font-bold text-lg pulse-glow"
         >
           <Send className="w-5 h-5" />
           {t("orderOnTelegram")} ({cartCount}) — {cartTotal}₽

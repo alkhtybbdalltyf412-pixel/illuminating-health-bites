@@ -51,9 +51,10 @@ const Testimonials = () => {
 
   return (
     <section className="container mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+      <h2 className="text-3xl font-bold text-foreground mb-2 text-center">
         {sectionTitle[lang]}
       </h2>
+      <div className="section-divider" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {testimonials.map((item, idx) => (
           <div

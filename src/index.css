@@ -55,6 +55,9 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: 'Nunito', 'Cairo', sans-serif;
@@ -81,5 +84,37 @@
   .card-elevated:hover {
     box-shadow: var(--card-hover-shadow);
     transform: translateY(-4px);
+  }
+
+  .fade-in-section {
+    animation: fadeInUp 0.6s ease-out both;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .section-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+    border-radius: 999px;
+    margin: 0 auto 2rem;
+  }
+
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 4px 15px hsla(142, 40%, 32%, 0.3); }
+    50% { box-shadow: 0 4px 25px hsla(142, 40%, 32%, 0.5); }
   }
 }
