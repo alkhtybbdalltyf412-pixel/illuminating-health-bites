@@ -46,15 +46,6 @@ const FoodCard = ({ item, quantity, onAdd, onRemove }: FoodCardProps) => {
           )}
         </div>
         <p className="text-sm text-muted-foreground mb-2">{t(item.descKey as any)}</p>
-        {item.nutrition && (
-          <div className="flex items-center gap-3 mb-2 text-xs text-muted-foreground">
-            <span>{item.nutrition.calories} {t("calories" as any)}</span>
-            <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
-            <span>{item.nutrition.protein}g {t("protein" as any)}</span>
-            <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
-            <span>{item.nutrition.carbs}g {t("carbs" as any)}</span>
-          </div>
-        )}
         {item.price > 0 && (
           <p className="text-base font-bold text-primary mb-3">{item.price}₽</p>
         )}
