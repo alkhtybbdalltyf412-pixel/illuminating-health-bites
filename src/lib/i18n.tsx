@@ -81,9 +81,9 @@ const translations = {
 
   riceChicken: { ar: "صدر دجاج المنير مع الرز", en: "Chicken Breast & Rice", ru: "Куриная грудка с рисом" },
   riceChickenDesc: {
-    ar: "وجبة — صدر دجاج مقلي بكمية قليلة من زيت الزيتون مع رز بسمتي نثري",
-    en: "Chicken breast lightly fried in olive oil with fluffy basmati rice",
-    ru: "Куриная грудка, слегка обжаренная в оливковом масле, с рассыпчатым рисом басмати",
+    ar: "وجبة ~350 غرام — صدر دجاج مقلي بزيت الزيتون مع رز بسمتي نثري وجزر",
+    en: "~350g portion — Chicken breast in olive oil with fluffy basmati rice and carrots",
+    ru: "Порция ~350 г — Куриная грудка в оливковом масле с рассыпчатым рисом басмати и морковью",
   },
   healthyBread: { ar: "خبز المنير الصحّي", en: "Healthy Bread", ru: "Полезный хлеб" },
   healthyBreadDesc: {
