@@ -59,7 +59,7 @@ const translations = {
     en: "250ml — with milk and honey",
     ru: "250 мл — с молоком и мёдом",
   },
-  avocadoCocktail: { ar: "عصير أفوكادو المنير الملكي", en: "Royal Avocado Juice", ru: "Королевский сок авокадо" },
+  avocadoCocktail: { ar: "كوكتيل أفوكادو المنير الملكي", en: "Royal Avocado Cocktail", ru: "Королевский коктейль авокадо" },
   avocadoCocktailDesc: {
     ar: "250 مل — مع مكسّرات وتمر",
     en: "250ml — with nuts and dates",
