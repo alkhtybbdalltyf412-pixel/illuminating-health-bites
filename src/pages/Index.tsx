@@ -27,24 +27,24 @@ import healthyBread from "@/assets/healthy-bread.jpg";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const meals: FoodItem[] = [
-  { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 200, comingSoon: true, nutrition: { calories: 350, protein: 22, carbs: 30 } },
-  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 200, comingSoon: true, nutrition: { calories: 280, protein: 24, carbs: 18 } },
-  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 200, nutrition: { calories: 320, protein: 28, carbs: 5 } },
-  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 200, nutrition: { calories: 400, protein: 30, carbs: 42 } },
+  { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 200, comingSoon: true },
+  { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 200, comingSoon: true },
+  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 200 },
+  { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 200 },
 ];
 
 const snacks: FoodItem[] = [
-  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 250, comingSoon: true, nutrition: { calories: 220, protein: 5, carbs: 35 } },
-  { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 250, nutrition: { calories: 180, protein: 4, carbs: 28 } },
+  { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 250, comingSoon: true },
+  { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 250 },
   { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 300 },
   { id: "coconut-balls", nameKey: "coconutBalls", descKey: "coconutBallsDesc", image: coconutBalls, price: 200 },
 ];
 
 const drinks: FoodItem[] = [
-  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 200, size: "250 ml", nutrition: { calories: 180, protein: 3, carbs: 20 } },
-  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 150, size: "250 ml", nutrition: { calories: 140, protein: 4, carbs: 26 } },
-  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 150, size: "250 ml", comingSoon: true, nutrition: { calories: 80, protein: 1, carbs: 18 } },
-  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 250, size: "250 ml", comingSoon: true, nutrition: { calories: 110, protein: 2, carbs: 25 } },
+  { id: "avocado-cocktail", nameKey: "avocadoCocktail", descKey: "avocadoCocktailDesc", image: avocadoCocktail, price: 200, size: "250 ml" },
+  { id: "banana-cocktail", nameKey: "bananaCocktail", descKey: "bananaCocktailDesc", image: bananaCocktail, price: 150, size: "250 ml" },
+  { id: "carrot-juice", nameKey: "carrotJuice", descKey: "carrotJuiceDesc", image: carrotJuice, price: 150, size: "250 ml", comingSoon: true },
+  { id: "orange-juice", nameKey: "orangeJuice", descKey: "orangeJuiceDesc", image: orangeJuice, price: 250, size: "250 ml", comingSoon: true },
 ];
 
 const bakery: FoodItem[] = [
