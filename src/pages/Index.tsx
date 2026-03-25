@@ -29,7 +29,7 @@ import heroBanner from "@/assets/hero-banner.jpg";
 const meals: FoodItem[] = [
   { id: "shawarma", nameKey: "shawarma", descKey: "shawarmaDesc", image: shawarma, price: 200, comingSoon: true },
   { id: "fajita", nameKey: "fajita", descKey: "fajitaDesc", image: fajita, price: 200, comingSoon: true },
-  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 200 },
+  { id: "grilled-wings", nameKey: "grilledWings", descKey: "grilledWingsDesc", image: grilledWings, price: 250 },
   { id: "rice-chicken", nameKey: "riceChicken", descKey: "riceChickenDesc", image: riceChicken, price: 200 },
 ];
 
