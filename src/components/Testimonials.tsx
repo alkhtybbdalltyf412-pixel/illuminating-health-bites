@@ -12,11 +12,11 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: { ar: "فاطمة حسين", en: "Fatima Hussein", ru: "Фатима Хусейн" },
+    name: { ar: "بشر زغنون", en: "Bishr Zaghnoun", ru: "Бишр Загнун" },
     text: {
-      ar: "الوجبات طازجة دائماً والمكوّنات عالية الجودة. أنصح الجميع بتجربتهم!",
-      en: "The meals are always fresh and the ingredients are top quality. I highly recommend them to everyone!",
-      ru: "Блюда всегда свежие, а ингредиенты высочайшего качества. Рекомендую всем!",
+      ar: "طعام لذيذ وخصوصاً صحّي، أنصح الجميع بتجربته!",
+      en: "Delicious food and especially healthy, I recommend everyone to try it!",
+      ru: "Вкусная и особенно полезная еда, рекомендую всем попробовать!",
     },
     rating: 5,
   },
@@ -30,11 +30,11 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: { ar: "مريم عبدالله", en: "Mariam Abdullah", ru: "Мариам Абдулла" },
+    name: { ar: "حسان الزعبي", en: "Hassan Al-Zoubi", ru: "Хассан Аз-Зуби" },
     text: {
-      ar: "نظافة المطبخ والتغليف تدلّ على احترافية عالية. أكل صحّي ولذيذ بنفس الوقت.",
-      en: "The kitchen cleanliness and packaging reflect high professionalism. Healthy and delicious at the same time.",
-      ru: "Чистота кухни и упаковка говорят о высоком профессионализме. Полезно и вкусно одновременно.",
+      ar: "جودة عالية ونكهة مميّزة، من أفضل الأكل الصحّي اللي جرّبته. ما رح تندم!",
+      en: "High quality and distinctive flavor, one of the best healthy food I've tried. You won't regret it!",
+      ru: "Высокое качество и особенный вкус, одна из лучших здоровых блюд, что я пробовал. Не пожалеете!",
     },
     rating: 5,
   },
