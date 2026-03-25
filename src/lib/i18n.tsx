@@ -52,6 +52,12 @@ const translations = {
     en: "200g box — mixed nuts and honey",
     ru: "Коробка 200 г — ассорти орехов с мёдом",
   },
+  coconutBalls: { ar: "كرات جوز الهند بالموز والكاكاو", en: "Coconut Banana Cocoa Balls", ru: "Кокосовые шарики с бананом и какао" },
+  coconutBallsDesc: {
+    ar: "علبة 200 غرام — كرات جوز هند بالموز والكاكاو الصحّية",
+    en: "200g box — Healthy coconut balls with banana and cocoa",
+    ru: "Коробка 200 г — Полезные кокосовые шарики с бананом и какао",
+  },
 
   bananaCocktail: { ar: "كوكتيل موز المنير", en: "Banana Cocktail", ru: "Банановый коктейль" },
   bananaCocktailDesc: {
