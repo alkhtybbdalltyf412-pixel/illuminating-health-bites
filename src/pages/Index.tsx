@@ -18,6 +18,7 @@ import shawarma from "@/assets/shawarma.jpg";
 import dateBalls from "@/assets/date-balls.jpg";
 import stuffedDates from "@/assets/stuffed-dates.jpg";
 import nutBars from "@/assets/nut-bars.jpg";
+import coconutBalls from "@/assets/coconut-balls.png";
 import bananaCocktail from "@/assets/banana-cocktail.jpg";
 import avocadoCocktail from "@/assets/avocado-cocktail.jpg";
 import orangeJuice from "@/assets/orange-juice.jpg";
@@ -35,7 +36,8 @@ const meals: FoodItem[] = [
 const snacks: FoodItem[] = [
   { id: "stuffed-dates", nameKey: "stuffedDates", descKey: "stuffedDatesDesc", image: stuffedDates, price: 250, comingSoon: true, nutrition: { calories: 220, protein: 5, carbs: 35 } },
   { id: "date-balls", nameKey: "dateBalls", descKey: "dateBallsDesc", image: dateBalls, price: 250, nutrition: { calories: 180, protein: 4, carbs: 28 } },
-  { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 300, nutrition: { calories: 250, protein: 8, carbs: 22 } },
+  { id: "nut-bars", nameKey: "nutBars", descKey: "nutBarsDesc", image: nutBars, price: 300 },
+  { id: "coconut-balls", nameKey: "coconutBalls", descKey: "coconutBallsDesc", image: coconutBalls, price: 200 },
 ];
 
 const drinks: FoodItem[] = [
